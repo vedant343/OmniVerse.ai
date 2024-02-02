@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Montserrat } from "next/font/google";
+
 import {
   Code,
   ImageIcon,
@@ -12,6 +13,7 @@ import {
   Settings,
   VideoIcon,
 } from "lucide-react";
+
 import { usePathname } from "next/navigation";
 
 import { cn } from "@/lib/utils";
@@ -80,7 +82,7 @@ export const Sidebar = ({
             <Image fill alt="Logo" src="/logo.png" />
           </div>
           <h1 className={cn("text-2xl font-bold", poppins.className)}>
-            Genius
+            OmniVerse
           </h1>
         </Link>
         <div className="space-y-1">
