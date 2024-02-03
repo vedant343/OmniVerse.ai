@@ -17,9 +17,9 @@ import {
 import { usePathname } from "next/navigation";
 
 import { cn } from "@/lib/utils";
-import { FreeCounter } from "@/components/free-counter";
+//import { FreeCounter } from "@/components/free-counter";
 
-const poppins = Montserrat({ weight: "600", subsets: ["latin"] });
+//const poppins = Montserrat({ weight: "600", subsets: ["latin"] });
 
 const routes = [
   {
@@ -85,7 +85,7 @@ export const Sidebar = ({
             OmniVerse
           </h1>
         </Link>
-        <div className="space-y-1">
+        {/* <div className="space-y-1">
           {routes.map((route) => (
             <Link
               key={route.href}
@@ -103,9 +103,8 @@ export const Sidebar = ({
               </div>
             </Link>
           ))}
-        </div>
+        </div> */}
       </div>
-      <FreeCounter apiLimitCount={apiLimitCount} isPro={isPro} />
     </div>
   );
 };
