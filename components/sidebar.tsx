@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Montserrat } from "next/font/google";
+//import { Montserrat } from "next/font/google";
 
 import {
   Code,
@@ -13,8 +13,6 @@ import {
   Settings,
   VideoIcon,
 } from "lucide-react";
-
-import { usePathname } from "next/navigation";
 
 import { cn } from "@/lib/utils";
 //import { FreeCounter } from "@/components/free-counter";
@@ -65,15 +63,7 @@ const routes = [
   },
 ];
 
-export const Sidebar = ({
-  apiLimitCount = 0,
-  isPro = false,
-}: {
-  apiLimitCount: number;
-  isPro: boolean;
-}) => {
-  const pathname = usePathname();
-
+export const Sidebar = () => {
   return (
     <div className="space-y-4 py-4 flex flex-col h-full bg-[#0e51e2] text-white">
       <div className="px-3 py-2 flex-1">
@@ -81,9 +71,7 @@ export const Sidebar = ({
           <div className="relative h-8 w-8 mr-4">
             <Image fill alt="Logo" src="/logo.png" />
           </div>
-          <h1 className={cn("text-2xl font-bold", poppins.className)}>
-            OmniVerse
-          </h1>
+          <h1 className="text-2xl font-bold">OmniVerse</h1>
         </Link>
         {/* <div className="space-y-1">
           {routes.map((route) => (
