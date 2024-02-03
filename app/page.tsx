@@ -6,7 +6,7 @@ import { Sidebar } from "@/components/sidebar";
 export default function Home() {
   return (
     <div className="h-screen">
-      <Sidebar />
+      <a href="/dashboard">here</a>
     </div>
   );
 }
