@@ -4,13 +4,10 @@ import Navbar from "@/components/navbar";
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="h-full relative">
-      <div className="hidden h-full md:flex md:w-72 md:flex-col md:fixed md:inset-y-0 z-80 bg-blue-700 text-white">
+      <div className="hidden h-full md:flex md:w-72 md:flex-col md:fixed md:inset-y-0 z-80 bg-black text-white">
         hello sidebar
       </div>
-      <main className="md:pl-72 pb-10">
-        <Navbar />
-        {children}
-      </main>
+      <main className="md:pl-72 pb-10">{children}</main>
     </div>
   );
 };

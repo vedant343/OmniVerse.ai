@@ -1,9 +1,11 @@
-import { UserButton } from "@clerk/nextjs";
+import Navbar from "@/components/navbar";
+
 
 const DashbaordPage = () => {
   return (
     <div>
       <p>Dashboard page (protected)</p>
+      <Navbar />
     </div>
   );
 };
