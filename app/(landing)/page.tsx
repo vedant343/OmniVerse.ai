@@ -5,6 +5,9 @@ const page = () => {
       <Button>
         <a href="/sign-in">SignIn</a>
       </Button>
+      <Button>
+        <a href="/sign-up">LogIn</a>
+      </Button>
     </div>
   );
 };
