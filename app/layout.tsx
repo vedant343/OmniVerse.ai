@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <>
       <LandingPage />
-      <ClerkProvider>
+      <ClerkProvider afterSignInUrl="/dashboard">
         <html lang="en" suppressHydrationWarning>
           <body className={inter.className}>{children}</body>
         </html>
